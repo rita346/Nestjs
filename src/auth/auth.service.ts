@@ -56,21 +56,6 @@ export class AuthService {
     return user;
   }
 
-  //signin if u dont want to use local strategy
-  async signin(email: string, password: string) {
-    const checkemail = await this.userModel.findOne({ email });
-    if (!checkemail) {
-      throw new NotFoundException('email not found');
-    }
-    const checkpass = await bcrypt.compare(password, checkemail.password);
-    if (!checkpass) {
-      throw new BadRequestException('Bad password');
-    }
-
-    const payload = { id: checkemail.id, email: checkemail.email };
-    return { access_token: this.jwtService.sign(payload) };
-  }
-
   //signin for local strategy
   async validateUser(email: string, pass: string): Promise<any> {
     const user = await this.userModel.findOne({ email });

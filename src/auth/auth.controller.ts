@@ -32,12 +32,6 @@ export class AuthController {
     return this.authService.signup2(body);
   }
 
-  //Signin without local strategy
-  @Post('/signin')
-  async signin(@Body() body: SigninDto) {
-    return await this.authService.signin(body.email, body.password);
-  }
-
   //Signin with local strategy
   @UseGuards(LocalAuthGuard)
   @Post('/signinL')
