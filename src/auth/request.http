@@ -1,0 +1,30 @@
+###Signup 1
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"user4@gmail.com",
+    "password":"1234",
+    "firstName":"user4",
+    "lastName":"user4",
+    "isVip":false,
+    "isAdmin":true
+}
+
+###Signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"user3@gmail.com",
+    "password":"1234"
+}
+
+###Signin with local
+POST http://localhost:3000/auth/signinL
+Content-Type: application/json
+
+{
+    "email":"user4@gmail.com",
+    "password":"1234"
+}
