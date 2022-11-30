@@ -70,6 +70,75 @@ export class ComplaintService {
     return 'updated to ' + stts;
   }
 
+  //get by filter for admin+group+sort
+  async getAllCF2(filterS: GetComStatusDto) {
+    const { status } = filterS;
+
+    const grps = await this.complaintModel
+      .aggregate([
+        {
+          $lookup: {
+            from: 'users',
+            localField: 'user',
+            foreignField: '_id',
+            as: 'user',
+          },
+        },
+        {
+          $sort: {
+            createdDate: -1,
+          },
+        },
+        {
+          $match: {
+            ...(status ? { status: status } : {}),
+          },
+        },
+        {
+          $facet: {
+            vip: [
+              {
+                $match: {
+                  'user.isVip': true,
+                },
+              },
+            ],
+            nonVip: [
+              {
+                $match: {
+                  'user.isVip': false,
+                },
+              },
+            ],
+          },
+        },
+      ])
+      .project({
+        'vip._id': 0,
+        'vip.__v': 0,
+        'nonVip._id': 0,
+        'nonVip.nonvip._id': 0,
+        'vip.user.password': 0,
+        'vip.user._id': 0,
+        'vip.user.isVip': 0,
+        'vip.user.isAdmin': 0,
+        'vip.user.createdDate': 0,
+        'vip.user.__v': 0,
+        'nonVip.user.password': 0,
+        'nonVip.user._id': 0,
+        'nonVip.user.isVip': 0,
+        'nonVip.user.isAdmin': 0,
+        'nonVip.user.createdDate': 0,
+        'nonVip.user.__v': 0,
+        'nonVip.__v': 0,
+      });
+
+    return grps;
+  }
+
+  // 2nd method for get all complaints
+
+  /*
   //get all complaints with descending sort(by createdDate) for admin without filtering status
   async getAllC2() {
     return await this.complaintModel
@@ -128,8 +197,8 @@ export class ComplaintService {
       });
   }
 
-  //get by filter for admin+group+sort
-  async getAllCF2(filterS: GetComStatusDto) {
+  //with filter+group+sorting
+  async getAllCF(filterS: GetComStatusDto) {
     const { status } = filterS;
 
     const grps = await this.complaintModel
@@ -194,4 +263,5 @@ export class ComplaintService {
 
     return grps;
   }
+*/
 }

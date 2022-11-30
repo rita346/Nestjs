@@ -68,14 +68,22 @@ export class ComplaintController {
     return await this.complaintService.updateS(id, userId, body.status);
   }
 
-  //get all complaints by filter
+  ///get all complaints sorting+grouping+filtering
+  @UseGuards(JwtAuthGuard, TestGuardC)
+  @Get()
+  async getAllC(@Query(ValidationPipe) filterStatus: GetComStatusDto) {
+    return await this.complaintService.getAllCF2(filterStatus);
+  }
+
+  /*
+  //get all complaints by filter(2nd method)
   @UseGuards(JwtAuthGuard, TestGuardC)
   @Get()
   async getAllC(@Query(ValidationPipe) filterStatus: GetComStatusDto) {
     if (Object.keys(filterStatus).length) {
-      return await this.complaintService.getAllCF2(filterStatus);
+      return await this.complaintService.getAllCF(filterStatus);
     } else {
       return await this.complaintService.getAllC2();
     }
-  }
+  }*/
 }

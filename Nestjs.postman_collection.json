@@ -512,14 +512,14 @@
 			"response": []
 		},
 		{
-			"name": "get with admin token + using a status",
+			"name": "get with admin token + using a status example 1",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODA1MjA3LCJleHAiOjE2Njk4MDg4MDd9.FwI2bpk-5aLHkW1046ei3iZkHuaMrhWvjnws3Gcqiv8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
 							"type": "string"
 						}
 					]
@@ -554,7 +554,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODA1MjA3LCJleHAiOjE2Njk4MDg4MDd9.FwI2bpk-5aLHkW1046ei3iZkHuaMrhWvjnws3Gcqiv8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
 							"type": "string"
 						}
 					]
@@ -583,7 +583,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODA1MjA3LCJleHAiOjE2Njk4MDg4MDd9.FwI2bpk-5aLHkW1046ei3iZkHuaMrhWvjnws3Gcqiv8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
 							"type": "string"
 						}
 					]
