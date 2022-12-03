@@ -6,7 +6,6 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
-//import { Role } from '../user.model';
 
 export class SignupDto {
   @IsEmail()
@@ -31,6 +30,4 @@ export class SignupDto {
   @IsOptional()
   @IsBoolean()
   isAdmin?: boolean;
-  //@IsEnum(Role)
-  //isAdmin: Role;
 }

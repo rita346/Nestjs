@@ -2,11 +2,6 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 export type UserDocument = User & Document;
-/*
-export enum Role {
-  Admin = 'admin',
-  User = 'client',
-}*/
 
 @Schema()
 export class User {
@@ -32,4 +27,7 @@ export class User {
   createdDate: Date;
 }
 
-export const UserSchema = SchemaFactory.createForClass(User);
+const UserSchema = SchemaFactory.createForClass(User);
+
+UserSchema.index({ email: 1, _id: 1 });
+export { UserSchema };

@@ -25,22 +25,19 @@ export class AuthController {
     );
   }
 
+  /*
   //Signup 2
   @Post('/sign')
   @Serialize(UserDto)
   async signupU(@Body() body: SignupDto) {
     return this.authService.signup2(body);
   }
+*/
 
   //Signin with local strategy
   @UseGuards(LocalAuthGuard)
   @Post('/signinL')
-  async login(
-    //@Body() body: SigninDto
-    @Request() req,
-  ) {
-    /*const user = await this.authService.validateUser(body.email, body.password);
-    return await this.authService.login(user);*/
+  async login(@Request() req) {
     return await this.authService.login(req.user);
   }
 }

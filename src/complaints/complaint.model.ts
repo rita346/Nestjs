@@ -11,15 +11,6 @@ export enum Status {
   Rejected = 'rejected',
 }
 
-export interface IComplaint {
-  id: string;
-  title: string;
-  body: string;
-  status: Status;
-  user: User;
-  createdDate: Date;
-}
-
 @Schema()
 export class Complaint {
   @Prop()

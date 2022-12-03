@@ -29,7 +29,7 @@ export class AuthService {
     lastName: string,
     isVip: boolean,
     isAdmin: boolean,
-  ) {
+  ): Promise<User> {
     const checkUser = await this.userModel.findOne({ email });
     if (checkUser) {
       throw new BadRequestException('Email is taken');
@@ -46,8 +46,9 @@ export class AuthService {
     return user;
   }
 
+  /*
   //signup 2
-  async signup2(users: SignupDto) {
+  async signup2(users: SignupDto):Promise<User> {
     const checkUser = await this.userModel.findOne({ email: users.email });
     if (checkUser) {
       throw new BadRequestException('Email is taken');
@@ -55,9 +56,10 @@ export class AuthService {
     const user = this.userModel.create(users);
     return user;
   }
+*/
 
   //signin for local strategy
-  async validateUser(email: string, pass: string): Promise<any> {
+  async validateUser(email: string, pass: string): Promise<User> {
     const user = await this.userModel.findOne({ email });
     if (!user) {
       throw new HttpException(
@@ -76,7 +78,7 @@ export class AuthService {
     return user;
   }
 
-  async login(user: any) {
+  async login(user: any): Promise<any> {
     const payload = { email: user.email, id: user.id, isAdmin: user.isAdmin };
     return {
       access_token: this.jwtService.sign(payload),
