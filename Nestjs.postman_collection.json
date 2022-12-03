@@ -168,7 +168,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5NzI1NDAzLCJleHAiOjE2Njk3MjkwMDN9.avcoQdkgaaAXi5udyn6-lLhhjYNJSTg2TdG25rjx2rM",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5MzM5LCJleHAiOjE2NzAwNzI5Mzl9.hRLGYwjz3QyTlgaJNsra41QzUkH1p_t7irALlg_xrc8",
 							"type": "string"
 						}
 					]
@@ -206,7 +206,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY2OTcyNTQ0NywiZXhwIjoxNjY5NzI5MDQ3fQ.w8HPsl2QlchMyrhSmy6OoICc45m6ipHLVGs-TW5PggQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY3MDA2OTM5OCwiZXhwIjoxNjcwMDcyOTk4fQ.CY0UtlwzhvtbcdkMVTeCXguizR1_7ClM2POft9KBQe0",
 							"type": "string"
 						}
 					]
@@ -215,7 +215,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"money retreived twice  \",\r\n    \"body\":\"money was retreived twice from my bank acc\",\r\n    \"user\":\"6385f5c3581a423e4bae5748\"\r\n}",
+					"raw": "{\r\n    \"title\":\"wrong items\",\r\n    \"body\":\"wrong order \",\r\n    \"user\":\"6385f5e6581a423e4bae574e\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -247,7 +247,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY2OTcyNTQ0NywiZXhwIjoxNjY5NzI5MDQ3fQ.w8HPsl2QlchMyrhSmy6OoICc45m6ipHLVGs-TW5PggQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY3MDA2OTM5OCwiZXhwIjoxNjcwMDcyOTk4fQ.CY0UtlwzhvtbcdkMVTeCXguizR1_7ClM2POft9KBQe0",
 							"type": "string"
 						}
 					]
@@ -279,7 +279,7 @@
 			"response": []
 		},
 		{
-			"name": "get complaint by yser id with no token",
+			"name": "get complaint by user id with no token",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -316,7 +316,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5NzI1ODQ4LCJleHAiOjE2Njk3Mjk0NDh9.TzcZgJ5e0V2mhj1UqJuLCFFmdzAeUIS1Gg2LM99LTtw",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5NjQ4LCJleHAiOjE2NzAwNzMyNDh9.CODfQg36FKw3uQ7AwDPylKy0l5PgeVQiycw5zITxrCY",
 							"type": "string"
 						}
 					]
@@ -370,47 +370,6 @@
 			"response": []
 		},
 		{
-			"name": "update with admin token",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5NzI1ODQ4LCJleHAiOjE2Njk3Mjk0NDh9.TzcZgJ5e0V2mhj1UqJuLCFFmdzAeUIS1Gg2LM99LTtw",
-							"type": "string"
-						}
-					]
-				},
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"status\":\"inprogress\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/complaint/6385f59b581a423e4bae5742/comp/6385fdb34db404436926aba5",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"complaint",
-						"6385f59b581a423e4bae5742",
-						"comp",
-						"6385fdb34db404436926aba5"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "update with client token",
 			"request": {
 				"auth": {
@@ -418,7 +377,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY2OTcyNjE5MiwiZXhwIjoxNjY5NzI5NzkyfQ.Tyqw5MJ4YkJrHDXJlPgu3KYxlNnH2HMANzNb2z36Vjw",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY3MDA2OTcwNiwiZXhwIjoxNjcwMDczMzA2fQ.KHK9OjgWBaLozbjCfBNSDv8XUaLB96uOizaHAv9ISyg",
 							"type": "string"
 						}
 					]
@@ -484,42 +443,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY2OTcyNjE5MiwiZXhwIjoxNjY5NzI5NzkyfQ.Tyqw5MJ4YkJrHDXJlPgu3KYxlNnH2HMANzNb2z36Vjw",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/complaint?status=pending",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"complaint"
-					],
-					"query": [
-						{
-							"key": "status",
-							"value": "pending"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get with admin token + using a status example 1",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI5QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1OGM1ODFhNDIzZTRiYWU1NzNmIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY3MDA2OTcwNiwiZXhwIjoxNjcwMDczMzA2fQ.KHK9OjgWBaLozbjCfBNSDv8XUaLB96uOizaHAv9ISyg",
 							"type": "string"
 						}
 					]
@@ -554,7 +478,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5OTUzLCJleHAiOjE2NzAwNzM1NTN9.8Gs2XQk1mYXWr0Slor3uCSDpzsS3FlcaplbXJ6PhrCg",
 							"type": "string"
 						}
 					]
@@ -583,7 +507,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY5ODI1NDgzLCJleHAiOjE2Njk4MjkwODN9.syza6ZOjFp-Tt_0x2wRNX7D27fCEYkRgPtOr5o6BZ3k",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5OTUzLCJleHAiOjE2NzAwNzM1NTN9.8Gs2XQk1mYXWr0Slor3uCSDpzsS3FlcaplbXJ6PhrCg",
 							"type": "string"
 						}
 					]
@@ -604,6 +528,82 @@
 						{
 							"key": "status",
 							"value": "resolved"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update with admin token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5NjQ4LCJleHAiOjE2NzAwNzMyNDh9.CODfQg36FKw3uQ7AwDPylKy0l5PgeVQiycw5zITxrCY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"rejected\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/complaint/6385f5c3581a423e4bae5748/comp/6385fe154db404436926abad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"complaint",
+						"6385f5c3581a423e4bae5748",
+						"comp",
+						"6385fe154db404436926abad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get with admin+status example1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGdtYWlsLmNvbSIsImlkIjoiNjM4NWY1ZGI1ODFhNDIzZTRiYWU1NzRiIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjcwMDY5OTUzLCJleHAiOjE2NzAwNzM1NTN9.8Gs2XQk1mYXWr0Slor3uCSDpzsS3FlcaplbXJ6PhrCg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/complaint?status=rejected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"complaint"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "rejected"
 						}
 					]
 				}
