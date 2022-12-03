@@ -53,7 +53,6 @@ export class ComplaintService {
       _id: id,
       user: userId,
     });
-    console.log(checkComp);
     if (!checkComp) {
       throw new NotFoundException('complaint not found');
     }
@@ -114,6 +113,27 @@ export class ComplaintService {
               ],
             },
           },
+        },
+      },
+      {
+        $project: {
+          _id: 0,
+          'vip.__v': 0,
+          'vip._id': 0,
+          'vip.user._id': 0,
+          'vip.user.password': 0,
+          'vip.user.isVip': 0,
+          'vip.user.isAdmin': 0,
+          'vip.user.createdDate': 0,
+          'vip.user.__v': 0,
+          'novip.__v': 0,
+          'novip._id': 0,
+          'novip.user._id': 0,
+          'novip.user.password': 0,
+          'novip.user.isVip': 0,
+          'novip.user.isAdmin': 0,
+          'novip.user.createdDate': 0,
+          'novip.user.__v': 0,
         },
       },
     ]);
